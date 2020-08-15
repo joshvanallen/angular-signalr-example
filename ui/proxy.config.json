@@ -1,0 +1,17 @@
+{
+    "/services/hub": {
+      "target": "http://localhost:5000",
+      "secure": false,
+      "pathRewrite": {
+        "^/services": ""
+      },
+      "ws":true
+    },
+    "/services": {
+      "target": "http://localhost:5000",
+      "secure": false,
+      "pathRewrite": {
+        "^/services": ""
+      }
+    }
+  }
